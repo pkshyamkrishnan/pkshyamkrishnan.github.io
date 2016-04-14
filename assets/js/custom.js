@@ -35,7 +35,7 @@ $('.svg').each(function(){
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
+	$(document).load(function() {
 		$('#status').fadeOut();
 		$('#preloader').delay(300).fadeOut('slow');
 	});
