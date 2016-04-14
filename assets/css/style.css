@@ -1,12 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-/*!
- * Clean v2.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
+
 
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
@@ -522,11 +517,11 @@ body::-webkit-scrollbar-thumb {
 	top: 25.5555555%;
 	left: 0;
 	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	-moz-transform: translate(0%, -50%);
-	-ms-transform: translate(0%, -50%);
-	-o-transform: translate(0%, -50%);
-	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -25.5555555%);
+	-moz-transform: translate(0%, -25.5555555%);
+	-ms-transform: translate(0%, -25.5555555%);
+	-o-transform: translate(0%, -25.5555555%);
+	transform: translate(0%, -25.5555555%);
 	padding: 0 15px;
 }
 
