@@ -210,7 +210,7 @@ $('.svg').each(function(){
 				'message'    : c_message
 			};
 
-			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
+			if (( c_name== '' || c_email == '' || c_message == '')) {
 				response.fadeIn(500);
 				response.html('<i class="fa fa-warning"></i> Please fill the form and try again.');
 			}
