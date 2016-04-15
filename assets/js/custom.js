@@ -14,6 +14,15 @@
 			mobile: false
 		});
 		wow.init();
+		$(function(){
+				$(".who").typed({
+					strings: ["UI/UX DESIGNER", "WEB DESIGNER", "WEB DEVELOPER"],
+					typeSpeed: 100,
+					backSpeed: 5,
+					loop: false
+
+				});
+			});
 		$('#preloader').fadeOut('slow');
 	});
 
@@ -63,15 +72,7 @@ var loadFilter='.logod';
 			$(this).addClass('active');
 		});
 
-		$(function(){
-				$(".who").typed({
-					strings: ["UI/UX DESIGNER", "WEB DESIGNER", "WEB DEVELOPER"],
-					typeSpeed: 100,
-					backSpeed: 5,
-					loop: false
 
-				});
-			});
 
 
 		/* ---------------------------------------------- /*
