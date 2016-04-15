@@ -58,21 +58,11 @@
 var loadFilter='.logod';
 
 		$('#Container').mixItUp({
-			var $window = $(window);
-			var windowsize = $window.width();
-			if($(windowsize>768)
-			{
     animation: {
 			duration:750,
       effects: 'scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
 			easing: 'cubic-bezier(.6,.05,.23,.85)'
-    }
-		},
-		else
-		{
-		animation:false;
-		}
-		,
+    },
 		load: {
 		filter: loadFilter // pass it to MixItUp when you instantiate
 	}
