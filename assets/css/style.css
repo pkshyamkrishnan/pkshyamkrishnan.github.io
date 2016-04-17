@@ -195,8 +195,23 @@ h6 {
 .iconsizee
 {
  color:rgba(122, 213, 171,1);
-font-size:10em;
+font-size:7em;
 
+}
+.pad0
+{padding-top:20px;
+}
+
+
+.pad0 a
+{
+	color:#222;
+}
+
+.pad0 a:hover
+{
+	color:rgba(122, 213, 171,1);
+	text-decoration: underline;
 }
 /* ---------------------------------------------- /*
  * Reset border-radius
