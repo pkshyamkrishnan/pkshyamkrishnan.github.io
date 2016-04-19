@@ -711,13 +711,27 @@ body::-webkit-scrollbar-thumb {
 	font-family: Raleway, sans-serif;
 }
 
+@media only screen and (max-width: 768px)
+{
+	.navbar-custom,
+.navbar-custom .dropdown-menu {
+	background: rgba(255, 255, 255, 0.92);
+	padding: 25px;
+	padding-left:0px;
+	padding-right:0px;
+}
+}
+
+@media only screen and (min-width: 768px)
+{
 .navbar-custom,
 .navbar-custom .dropdown-menu {
 	background: rgba(255, 255, 255, 0.92);
 	padding: 25px;
+	/* padding-left: 0px; */
 	-webkit-filter: blur(0px);
 }
-
+}
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
