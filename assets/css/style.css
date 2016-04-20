@@ -727,7 +727,7 @@ body::-webkit-scrollbar-thumb {
 	height: 50px;
 	font-size: xx-large;
 	width: 50px;
-	transform: translateX(-10%);
+	transform: translateX(-10px);
 	margin-left: -15px;
 	display:block;
 	z-index: 10;
