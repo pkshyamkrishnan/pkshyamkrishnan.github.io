@@ -1056,7 +1056,7 @@ body::-webkit-scrollbar-thumb {
 	font-weight: 300;
 }
 figure.effect-bubba:hover .ninetag {opacity: 1;bottom:0px;box-shadow: 5px 5px 2px rgba(0,0,0,0.35);transition: All 0.25s ease-in-out;}
-.ninetag {box-shadow: 0px 5px 10px rgba(0,0,0,0.6);display:inline-flex;/* border-top-right-radius: 25px; */position:absolute;background-color: rgba(255,255,255,1);opacity:0;bottom:-50px;transition: All 0.25s ease-in-out;left:0;}
+.ninetag {box-shadow: 0px 5px 10px rgba(0,0,0,0.35);display:inline-flex;/* border-top-right-radius: 25px; */position:absolute;background-color: rgba(255,255,255,1);opacity:0;bottom:-50px;transition: All 0.25s ease-in-out;left:0;}
 
 .ninetag h3{
 	line-height: 60px;
