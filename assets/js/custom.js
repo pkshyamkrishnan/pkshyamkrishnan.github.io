@@ -56,11 +56,10 @@
 
 						});
 var loadFilter='.logod';
-
 		$('#Container').mixItUp({
     animation: {
 			duration:750,
-      effects: 'scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
+      effects: ' scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
 			easing: 'cubic-bezier(.6,.05,.23,.85)'
     },
 		load: {
