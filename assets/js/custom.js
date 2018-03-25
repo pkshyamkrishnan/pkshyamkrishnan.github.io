@@ -55,17 +55,30 @@
 								}, 'xml');
 
 						});
-var loadFilter='.logod';
-		$('#Container').mixItUp({
-    animation: {
-			duration:750,
-      effects: ' scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
-			easing: 'cubic-bezier(.6,.05,.23,.85)'
-    },
-		load: {
-		filter: loadFilter // pass it to MixItUp when you instantiate
-	}
-	});
+								var loadFilter='.logod';
+								$('#Container').mixItUp({
+									animation: {
+									enable: false
+								},
+								load: {
+								filter: loadFilter // pass it to MixItUp when you instantiate
+							},
+								callbacks: {
+								onMixLoad: function(){
+								$(this).mixItUp('setOptions', {
+								animation: {
+									enable: true,
+									duration:750,
+									effects: ' scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
+									easing: 'cubic-bezier(.6,.05,.23,.85)'
+								},
+								load: {
+								filter: loadFilter // pass it to MixItUp when you instantiate
+							}
+							});
+							}
+							}
+							});
 
 		$('.filter').click(function(){
 			$(this).addClass('active');
@@ -93,6 +106,7 @@ var loadFilter='.logod';
 				$('.scroll-up').fadeIn();
 			} else {
 				$('.scroll-up').fadeOut();
+
 			}
 		});
 
@@ -101,13 +115,14 @@ var loadFilter='.logod';
 		/* ---------------------------------------------- */
 
 		$('.header').sticky({
-			topSpacing: 0
+			topSpacing: 0,
+			mobile: true
 		});
 
 		$('body').scrollspy({
 			target: '.navbar-custom',
-			offset:0
-		})
+			offset: 0
+		});
 
 
         /* ---------------------------------------------- /*
@@ -123,7 +138,7 @@ var loadFilter='.logod';
 										easing: 'cubic-bezier(.6,.05,.23,.85)',
                     lineCap:'round',
                     scaleColor: false,
-                    barColor: '#7ad5ab',
+                    barColor: 'rgb(84, 202, 145)',
                     trackColor: 'rgb(227, 224, 224)',
                     lineWidth: 14,
 										onStep: function(value) {
@@ -175,7 +190,7 @@ var loadFilter='.logod';
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 			$('#home').css({'background-attachment': 'scroll'});
 		} else {
-			$('#home').parallax('50%', 0.6);
+			$('#home').parallax('50%', 0.85);
 		}
 
 
@@ -197,42 +212,6 @@ var loadFilter='.logod';
 		/* ---------------------------------------------- /*
 		 * Contact form ajax
 		/* ---------------------------------------------- */
-
-		$('#contact-form').submit(function(e) {
-
-			e.preventDefault();
-
-			var c_name = $('#c_name').val();
-			var c_email = $('#c_email').val();
-			var c_message = $('#c_message ').val();
-			var response = $('#contact-form .ajax-response');
-
-			var formData = {
-				'name'       : c_name,
-				'email'      : c_email,
-				'message'    : c_message
-			};
-
-			if (( c_name== '' || c_email == '' || c_message == '')) {
-				response.fadeIn(500);
-				response.html('<i class="fa fa-warning"></i> Please fill the form and try again.');
-			}
-
-			else {
-					 $.ajax({
-							type        : 'GET', // define the type of HTTP verb we want to use (POST for our form)
-							url         : 'assets/php/contact.php', // the url where we want to POST
-							data        : formData, // our data object
-							dataType    : 'json', // what type of data do we expect back from the server
-							encode      : true,
-							success		: function(res){
-											var ret = $.parseJSON(JSON.stringify(res));
-											response.html(ret.message).fadeIn(500);
-							}
-						});
-				}
-            	return false;
-			});
 
 	});
 

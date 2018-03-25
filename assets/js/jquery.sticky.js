@@ -17,8 +17,8 @@
       className: 'is-sticky',
       wrapperClassName: 'sticky-wrapper',
       center: true,
-      getWidthFrom: '.header',
-      responsiveWidth: true
+      getWidthFrom: '#header',
+      responsiveWidth: false
     },
     $window = $(window),
     $document = $(document),
