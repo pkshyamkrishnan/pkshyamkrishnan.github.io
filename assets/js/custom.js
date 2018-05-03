@@ -55,7 +55,7 @@
 								}, 'xml');
 
 						});
-								var loadFilter='.logod';
+								var loadFilter='.webdesign';
 								$('#Container').mixItUp({
 									animation: {
 									enable: false
