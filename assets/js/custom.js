@@ -68,8 +68,9 @@
 								$(this).mixItUp('setOptions', {
 								animation: {
 									enable: true,
-									duration:750,
-									effects: ' scale  translateZ(3500px)  rotateX(25deg) stagger(35ms)',
+									duration:750,									
+									effectsIn: 'scale translateX(600%) stagger(60ms)',
+									effectsOut: 'scale translateX(-100%) stagger(60ms)',
 									easing: 'cubic-bezier(.6,.05,.23,.85)'
 								},
 								load: {

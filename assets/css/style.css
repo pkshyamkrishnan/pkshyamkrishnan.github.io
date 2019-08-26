@@ -51,7 +51,7 @@ a:hover {
 }
 .about0
 {
-	box-shadow:0px 0px 36px rgba(0,0,0,0.2);
+padding: 15px;
 }
 .view:hover{
 	transition:all 0.25s ease-in-out;
