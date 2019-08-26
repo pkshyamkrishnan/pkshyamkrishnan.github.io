@@ -16,7 +16,7 @@
 		wow.init();
 		$(function(){
 				$(".who").typed({
-					strings: ["UI/UX DESIGNER", "WEB DESIGNER", "WEB DEVELOPER"],
+					strings: ["UI/UX ENGINEER", "PRODUCT DESIGNER"],
 					typeSpeed: 100,
 					backSpeed: 5,
 					loop: false
@@ -55,7 +55,7 @@
 								}, 'xml');
 
 						});
-								var loadFilter='.logod';
+								var loadFilter='.webdesign';
 								$('#Container').mixItUp({
 									animation: {
 									enable: false
