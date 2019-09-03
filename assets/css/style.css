@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+/* @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lobster); */
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 
 body {
-	font: 300 14px/1.8 'Raleway', sans-serif;
+	font: 300 14px/1.8 'Montserrat', sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -16,6 +16,10 @@ img {
 
 a {
 	color: #FFFFFF;
+}
+
+.skill-container{
+width:100%	
 }
 
 .navbar-collapse{
@@ -196,7 +200,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 600 40px/1.2 Raleway, sans-serif;
+	font: 600 40px/1.2 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -332,7 +336,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -463,7 +467,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .pfblock-subtitle {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -611,7 +615,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	text-transform: none;
@@ -762,7 +766,7 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Raleway, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 768px)
