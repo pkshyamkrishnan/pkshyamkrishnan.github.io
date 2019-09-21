@@ -506,6 +506,16 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
 }
 
+.lity-close,.lity-close:active{
+	padding: 0px !important;
+    background-color: black !important;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;	
+}
+
 @media (max-width:767px){
 	.center-section{
 		max-width:100%;
