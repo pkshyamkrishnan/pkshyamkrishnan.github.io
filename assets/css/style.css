@@ -39,37 +39,28 @@ a:hover {
 {
 	opacity:1;
 }
-.view
-{
-	margin-top: 30px;
-	padding: 11px;
-	margin:0 auto;
-	opacity:0;
-	-webkit-transform:scale3d(1,1,1);
-	background-color: rgba(255,255,255,0);
-	height: 60px;
-	border:2px solid rgba(255,255,255,0);
-	width: 60px;
-	border-radius: 50%;
-	transition:all 0.25s ease-in-out;
-}
 .about0
 {
 padding: 15px;
 }
-.view:hover{
-	transition:all 0.25s ease-in-out;
-	margin-top: 30px;
-	/* padding: 10px; */
-	height: 60px;
-	padding: 11px;
-	-webkit-transform:scale3d(1.05,1.05,1.05);
-	transform:scale3d(1.05,1.05,1.05);
-	border:2px solid rgba(255,255,255,1);
+.view
+{
+	
+	padding: 10px;
 	margin:0 auto;
-	width: 60px;
+	margin-top: 30px;
+	opacity:0;
 	background-color: rgba(255,255,255,0.2);
-	color: rgba(255,255,255,1);
+	border:2px solid rgba(255,255,255,1);
+	width: auto;
+	max-width: 230px;
+	border-radius: 10px;
+	transition:opacity 0.25s ease-in-out;
+}
+
+.view:hover{
+	opacity: 1;
+	transition:opacity 0.25s ease-in-out;	
 }
 .logo{
 	width: 100%;
